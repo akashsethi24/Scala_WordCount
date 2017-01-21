@@ -7,7 +7,7 @@ Submitting a Job to Hadoop which is written in Scala is not that easy, because H
 For writing Word Count Program in Scala we need to follow the following steps
 
     Create Scala Project with Sbt having version of your choice.
-    Add Hadoop core Dependency in build.sbt from here.
+    Add Hadoop core Dependency in build.sbt from [here](https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-core).
     Create Scala object say WordCount with main method in the project.
     Create a class under the Scala object say Map that extends MapReduceBase class with Mapper class.
     Provide body to Map Function.
@@ -19,7 +19,7 @@ Here is the example for Word Count Program written in Scala.
 
 Till now we have created a program in Scala, now we need to submit this Program/ Job to Hadoop. For submitting a job to Hadoop we need to follow certain steps.
 
-    Add sbt-assembly plugin to plugin.sbt under project from here.
+    Add sbt-assembly plugin to plugin.sbt under project from [here](https://github.com/sbt/sbt-assembly).
     Open terminal and change directory to the root of the project.
     In terminal run the command sbt clean compile assembly
     This command will build the jar under target/scala<version> folder of project.
@@ -41,4 +41,4 @@ you can see the output by the following command
 
 `$HADOOP_HOME/bin/hadoop fs -ls output_dir/`
 
-if you encounter any problem regarding the building of jar using sbt clean compile assembly command then you need to include mergeStrategy in build.sbt you can find related information here.
+if you encounter any problem regarding the building of jar using sbt clean compile assembly command then you need to include mergeStrategy in build.sbt you can find related information [here](https://github.com/sbt/sbt-assembly).
