@@ -39,6 +39,6 @@ the jar in the last command is same which is stored in target/scala<verion> dire
 
 you can see the output by the following command
 
-$HADOOP_HOME/bin/hadoop fs -ls output_dir/
+`$HADOOP_HOME/bin/hadoop fs -ls output_dir/`
 
 if you encounter any problem regarding the building of jar using sbt clean compile assembly command then you need to include mergeStrategy in build.sbt you can find related information here.
